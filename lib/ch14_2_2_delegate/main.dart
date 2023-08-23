@@ -13,7 +13,7 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerDelegate: MyRoutherDelegate(),
+      routerDelegate: MyRouterDelegate(),
       routeInformationParser: MyRouteInformationParser(),
     );
   }
@@ -47,7 +47,7 @@ class MyRouteInformationParser extends RouteInformationParser<MyRoutePath> {
   }
 }
 
-class MyRoutherDelegate extends RouterDelegate<MyRoutePath> with ChangeNotifier, PopNavigatorRouterDelegateMixin<MyRoutePath> {
+class MyRouterDelegate extends RouterDelegate<MyRoutePath> with ChangeNotifier, PopNavigatorRouterDelegateMixin<MyRoutePath> {
   String? selectId;
   final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -68,6 +68,7 @@ class MyRoutherDelegate extends RouterDelegate<MyRoutePath> with ChangeNotifier,
   }
 
   void _handleOnPressed(String id) {
+    print("_handleOnPressed <= ${id}");
     selectId = id;
     notifyListeners();
   }
@@ -81,6 +82,8 @@ class MyRoutherDelegate extends RouterDelegate<MyRoutePath> with ChangeNotifier,
         if (selectId != null) MaterialPage(child: DetailScreen(selectId)),
       ],
       onPopPage: (route, result) {
+        print("Navigator.conPopPage(${route}, ${result})");
+        
         if (!route.didPop(result)) {
           return false;
         }
