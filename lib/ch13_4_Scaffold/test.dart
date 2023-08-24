@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(48.0),
             child: Theme(
-              data: Theme.of(context).copyWith(accentColor: Colors.white),
+              data: Theme.of(context).copyWith(focusColor: Colors.white),
               child: Container(
                 height: 48,
                 alignment: Alignment.center,

@@ -28,6 +28,7 @@ class MyRoutePath {
 class MyRouteInformationParser extends RouteInformationParser<MyRoutePath> {
   @override
   Future<MyRoutePath> parseRouteInformation(RouteInformation routeInformation) async {
+    //final uri = Uri.parse(routeInformation.location ?? "/"); // 'location' is deprecated from >3.7.3.
     final uri = Uri.parse(routeInformation.location ?? "/");
     if (uri.pathSegments.length >= 2) {
       var remaining = uri.pathSegments[1];
@@ -83,7 +84,7 @@ class MyRouterDelegate extends RouterDelegate<MyRoutePath> with ChangeNotifier, 
       ],
       onPopPage: (route, result) {
         print("Navigator.conPopPage(${route}, ${result})");
-        
+
         if (!route.didPop(result)) {
           return false;
         }
