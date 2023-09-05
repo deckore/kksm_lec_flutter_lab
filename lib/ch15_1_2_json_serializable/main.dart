@@ -2,12 +2,13 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'test.g.dart';
+//part 'test.g.dart';
 /**
  * failed
    flutter pub run build_runner build
  */
 
+/*
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -79,3 +80,4 @@ class Todo {
   factory Todo.fromJson(Map<String, dynamic> json) => _$TodoFromJson(json);
   Map<String, dynamic> toJson() => _$TodoToJson(this);
 }
+*/
