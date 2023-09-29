@@ -3,6 +3,7 @@ package com.example.kksm_lec_flutter_lab
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity: FlutterActivity() {
+    /*
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         GeneratedPluginRegistrant.registerWith(flutterEngine)
 
@@ -15,4 +16,5 @@ class MainActivity: FlutterActivity() {
             }
         }
     }
+    */
 }

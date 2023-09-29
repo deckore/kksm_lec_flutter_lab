@@ -57,6 +57,7 @@ class _NativePluginWidgetState extends State<NativePluginWidget> {
     return Scaffold(
       appBar: AppBar(title: const Text("Getlocator")),
       body: Container(
+        color: Colors.indigo,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
