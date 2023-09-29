@@ -13,12 +13,13 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
+  geolocator: ^8.2.1
   get: ^4.6.5
   http: ^0.13.4
+  image_picker: ^0.8.5+3
   intl: ^0.18.1
   json_annotation: ^4.8.1
   provider: ^6.0.5
-  geolocator: ^8.2.1
 
 dev_dependencies:
   build_runner: ^2.1.11
