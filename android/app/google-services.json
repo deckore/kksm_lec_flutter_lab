@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "336554906518",
+    "project_id": "kksm-lec-flutter-lab-v1",
+    "storage_bucket": "kksm-lec-flutter-lab-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336554906518:android:5e4dcd8936a3f8c76f03b7",
+        "android_client_info": {
+          "package_name": "com.example.kksm_lec_flutter_lab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaeD0zr5WC1Au8rDYbczxJbiSgg-D4yd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
